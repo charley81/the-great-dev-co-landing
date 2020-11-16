@@ -1,5 +1,6 @@
 import React from "react"
 import { Global, css } from "@emotion/core"
+import Navbar from "./Navbar"
 
 const Layout = ({ children }) => {
   return (
@@ -78,7 +79,7 @@ const Layout = ({ children }) => {
           }
         `}
       />
-      <header></header>
+      <Navbar />
       <main
         css={css`
           margin: 0 auto;

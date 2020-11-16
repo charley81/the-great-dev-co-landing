@@ -8,6 +8,7 @@ const NavItem = styled(Link)`
   white-space: nowrap;
   position: relative;
   transition: var(--transition);
+  color: var(--lightColor);
 
   :after {
     position: absolute;
@@ -18,14 +19,12 @@ const NavItem = styled(Link)`
     width: 0;
     content: ".";
     color: transparent;
-    background: var(--primaryColor);
     height: 1px;
     transition: var(--transition);
   }
 
   :hover {
     color: var(--primaryColor);
-    background: var(--lightColor);
     ::after {
       width: 100%;
     }
@@ -42,10 +41,10 @@ const NavLinks = () => {
   return (
     <>
       <NavItem to="/">Home</NavItem>
-      <NavItem to="/">About</NavItem>
-      <NavItem to="/">Projects</NavItem>
-      <NavItem to="/">Blog</NavItem>
-      <NavItem to="/">Contact</NavItem>
+      <NavItem to="/about">About</NavItem>
+      <NavItem to="/projects">Projects</NavItem>
+      <NavItem to="/blog">Blog</NavItem>
+      <NavItem to="/contact">Contact</NavItem>
     </>
   )
 }
