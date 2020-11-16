@@ -1,5 +1,5 @@
 import React from "react"
-import { Global, css } from "@emotion/react"
+import { Global, css } from "@emotion/core"
 
 const Layout = ({ children }) => {
   return (
@@ -27,6 +27,7 @@ const Layout = ({ children }) => {
               line-height: 1.5;
               background: var(--secondaryColor);
               color: var(--lightColor);
+              font-family: "Quicksand", sans-serif;
             }
 
             img {
