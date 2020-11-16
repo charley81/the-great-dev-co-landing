@@ -1,10 +1,11 @@
 import React from "react"
+import Hero from "../components/Hero"
 import Layout from "../components/Layout"
 
 const homePage = () => {
   return (
     <Layout>
-      <h1>Home Page</h1>
+      <Hero />
     </Layout>
   )
 }

@@ -1,6 +1,8 @@
 import React, { useState } from "react"
+import { Link } from "gatsby"
 import NavLinks from "./NavLinks"
 import styled from "@emotion/styled"
+import { css } from "@emotion/core"
 
 const Navigation = styled("nav")`
   height: 10vh;
@@ -36,7 +38,7 @@ const Navbox = styled("div")`
   height: 100%;
   justify-content: flex-end;
   align-items: center;
-  background: var(--darkColor);
+  background: var(--secondaryColor);
   @media (max-width: 768px) {
     flex-direction: column;
     position: fixed;
@@ -82,7 +84,15 @@ const Navbar = () => {
 
   return (
     <Navigation>
-      <h1>The Great Dev Co.</h1>
+      <h1
+        css={css`
+          a {
+            color: var(--lightColor);
+          }
+        `}
+      >
+        <Link to="/">TGDC</Link>
+      </h1>
       <Toggle
         navbarOpen={navbarOpen}
         onClick={() => setNavbarOpen(!navbarOpen)}
