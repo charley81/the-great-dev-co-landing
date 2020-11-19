@@ -6,6 +6,7 @@ const HeroStyles = styled("div")`
   height: 100vh;
   align-items: center;
   justify-content: center;
+  overflow-y: hidden;
 
   h1 {
     line-height: 1;
@@ -14,6 +15,22 @@ const HeroStyles = styled("div")`
 
   span {
     color: var(--primaryColor);
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1100px) {
+    h1 {
+      font-size: 4rem;
+    }
   }
 `
 
